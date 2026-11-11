@@ -20,7 +20,7 @@ cask "ctdozlite-next" do
   desc "Lightweight native Zalo desktop client written in Rust"
   homepage "https://github.com/minhkhang1008/ctdozlite-next"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   # The app updates itself from GitHub Releases.
   auto_updates true
