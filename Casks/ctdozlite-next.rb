@@ -27,9 +27,8 @@ cask "ctdozlite-next" do
 
   app "ctdozlite.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/ctdozlite.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/ctdozlite.app"]
   end
 
   zap trash: "~/Library/Application Support/ctdozlite"
