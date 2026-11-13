@@ -11,9 +11,9 @@
 cask "ctdozlite-next" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.3.0"
-  sha256 arm:   "94826064e572163e431c6793db0df5824a3c1df42495db7405063021d79711ad",
-         intel: "6c91600d0a6e1ff9a52430a773158b086dcd767abab315f3a70e356dd563db06"
+  version "0.3.1"
+  sha256 arm:   "029f77225211c8777d382057de860fec0452aefb84cb852978cfb12db68a4db2",
+         intel: "256541029ef27b34b87d2d132b7f38971c53a3d3b19414a3c94c9c625269884f"
 
   url "https://github.com/minhkhang1008/ctdozlite-next/releases/download/v#{version}/ctdozlite-#{version}-macos-#{arch}.dmg"
   name "ctdozlite-next"
