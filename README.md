@@ -1,16 +1,21 @@
 # minhkhang1008/homebrew-tap
 
-Homebrew tap for [ctdozlite-next](https://github.com/minhkhang1008/ctdozlite-next), a lightweight,
+Homebrew tap for [Zalo-next](https://github.com/minhkhang1008/zalo-next) (formerly ctdozlite-next), a lightweight,
 open-source Zalo desktop client written in Rust.
 
 ```bash
-brew install --cask minhkhang1008/tap/ctdozlite-next
+brew install --cask minhkhang1008/tap/ctdozlite-next   # current releases
+brew install --cask minhkhang1008/tap/zalo-next        # from the first Zalo-next release
 ```
+
+> The project was renamed to **Zalo-next**. The `zalo-next` cask is a placeholder until the first release
+> published under the new name; the release workflow then fills in its version and checksums, and
+> `ctdozlite-next` becomes a deprecated alias.
 
 ## What the cask does
 
 - Downloads the official DMG from the project's
-  [GitHub Releases](https://github.com/minhkhang1008/ctdozlite-next/releases). Homebrew checks it
+  [GitHub Releases](https://github.com/minhkhang1008/zalo-next/releases). Homebrew checks it
   against the SHA-256 pinned in [`Casks/ctdozlite-next.rb`](Casks/ctdozlite-next.rb).
 - Installs `ctdozlite.app` into `/Applications`.
 - Removes the "downloaded from the Internet" flag from that app only (`xattr -cr`). The app is
