@@ -18,9 +18,9 @@
 cask "zalo-next" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.0.0"
-  sha256 arm:   "0000000000000000000000000000000000000000000000000000000000000000",
-         intel: "0000000000000000000000000000000000000000000000000000000000000000"
+  version "0.4.0"
+  sha256 arm:   "ba3614250b406f67b4c020e7efc2772c197c83a5e2a25d7d424553e0bc393d60",
+         intel: "463ca4a899c08d7ca6d6afe7e01d066c944ab3d13ff78dc947417f8126f6ab08"
 
   url "https://github.com/minhkhang1008/zalo-next/releases/download/v#{version}/zalo-next-#{version}-macos-#{arch}.dmg"
   name "Zalo-next"
