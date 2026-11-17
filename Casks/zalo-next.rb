@@ -5,14 +5,9 @@
 #
 #   brew install --cask minhkhang1008/tap/zalo-next
 #
-# Renamed from the `ctdozlite-next` cask: keep a stub `Casks/ctdozlite-next.rb` in the tap that
-# calls `deprecate! date: "2026-11-17", because: :renamed` (or add `tap_migrations.json`
-# {"ctdozlite-next": "zalo-next"}) so `brew upgrade` still finds installs of the old name.
-#
-# PLACEHOLDER until the first Zalo-next release: `version` and both `sha256` values are filled in by the
-# release workflow (.github/workflows/ci-release.yml, "Update Homebrew tap"). Until then use `ctdozlite-next`.
-#
-# On each release update `version` and both `sha256` values from the release's SHA256SUMS.txt.
+# Renamed from `ctdozlite-next` (see `cask_renames.json` at the tap root, so `brew upgrade` moves old
+# installs here). `version` and both `sha256` values are updated by the project's release workflow
+# (.github/workflows/ci-release.yml, "Update Homebrew tap") from the release's SHA256SUMS.txt.
 # The app is ad-hoc signed (not notarized), so postflight clears the quarantine flag that
 # Homebrew adds; otherwise Gatekeeper would block the first launch.
 cask "zalo-next" do
